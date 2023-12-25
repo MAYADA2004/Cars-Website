@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Quicksand', sans-serif; 
+}
+
+/* header start */
+header{
+    height: 100vh;
+    background: url('./images/home.jpg') center center/cover no-repeat;
+    position: relative;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    margin-right: 100px;
+}
+
+a{
+    text-decoration: none;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Utility classes */
+.primary-text{
+    color: burlywood;
+}
+
+ a:hover{border-bottom: 2px solid ;
+    color: cornflowerblue;
+
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+ header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 75%;
+}
+
+.content h1{
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+    margin:  -5px 10px ; 
+}
+
+.content p{
+    font-size: 25px;
+     margin:20px 0 40px ; 
+    color: white;
+    font-weight: 700;
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0,0,.6);
+}
+
+header *{
+    z-index: 10;
+}
+/* header end */
+
+/* About Start */
+#about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url("./images/about3.png") center center/cover fixed; */
+    background-color: wheat;
+}
+
+#about .title ,
+#inventory .title{
+    text-align: center;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+#about h2 ,
+#inventory h2{
+    font-size: 40px;
+    color: #383848;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#about .title p{
+    font-size: 25px;
+    color: #383848;
+    font-weight: 700;
+}
+
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#about .about-content{
+    color: #383848;
+    margin-right: 5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 20px;
+    align-items: center;
+}
+
+.btn-secondary{
+    color: white;
+    background-color: #383848;
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-secondary:hover{
+    background-color: cornflowerblue;
+    color: #383848;
+}
+/* About End */
+
+/* offers start */
+#inventory{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url("./images/inventory.png") center center/cover fixed;
+
+}
+
+
+#inventory .title p{
+    color: white;
+    font-weight: 700;
+    padding: 15px 0;
+    font-size: 20px;
+
+}
+
+#inventory .inventory-items{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    color: white;
+    /* font-size: 15px;
+    line-height: 25px; */
+    padding: 20px 5px;
+   
+}
+
+#inventory .inventory-items img{
+    width: 200px;
+}
+
+#inventory .inventory-items h3{
+    font-size: 25px;
+    margin:  15px 0;
+    padding: 0px 40px;
+}
+
+#inventory .inventory-items p{
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+#inventory .inventory-items span{
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 5px ;
+}
+/* offers end */
+
+
+ /* gallery start */
+.slideshow-container {
+    max-width: 1400px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .mySlides  img {
+    width: 1340px;
+    height: 85vh;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+
+  /* gallery end */
+/* daytime start */
+#daytime{
+    background: url(./images/about1.png) center center/cover fixed no-repeat;
+    color: white;
+    text-align: center;
+}
+
+#daytime .daytime-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+
+#daytime .daytime-items img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+#daytime .daytime-items h3{
+    font-size: 30px;
+    margin: 20px 0 10px;
+}
+
+#daytime .daytime-items p{
+    font-weight: 500;
+}
+/* daytime end */
+
+
+/* contact start */
+#contact{
+    padding: 5rem 0;
+    background-color: wheat;
+}
+
+#contact .container{
+    max-width: 900px;
+}
+
+#contact .contact-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact .contact-content .contact-info{
+    width: 50%;
+}
+
+#contact .contact-content .contact-info div{
+    margin: 30px 0;
+    line-height: 1.7;
+}
+
+#contact .contact-content .contact-info h3{
+    font-size: 28px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#contact .contact-content .contact-info p{
+    color:#383848;
+}
+
+#contact .contact-content .contact-info i{
+    color: #383848;
+    margin-right: 5px;
+}
+
+ #contact .contact-content .contact-info a i{
+    color: white;
+    background-color: #383848; 
+    padding: 10px; 
+    border-radius: 50%;
+    margin: -10px;
+    font-size: 20px;
+    border-bottom-color: wheat;
+}
+
+#contact .contact-content .contact-info a i:hover{
+    background-color: cornflowerblue;
+    color: #383848;
+    transform: scale(0.85);
+}
+
+form{
+    width: 50%;
+}
+
+form input , textarea{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #e3e2dd;
+}
+
+#contact .btn{
+    background: #383848;
+    color: white;
+}
+
+#contact .btn-secondary:hover{
+    background-color: cornflowerblue;
+}
+/* contact end */
+/* Footer start */
+#footer{
+    background-color: black;
+    text-align: center;
+    color: wheat;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+#footer a{
+    color: wheat;
+}
+/* footer end */
